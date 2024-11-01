@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f2f5;
+      padding: 20px;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+    }
+
+    .pricing-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .plan-name {
+      color: #1a1a1a;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 48px;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    .price span {
+      font-size: 16px;
+      color: #64748b;
+    }
+
+    .features {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .features li {
+      padding: 10px 0;
+      color: #4b5563;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: "✓";
+      color: #22c55e;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    .popular {
+      position: relative;
+      border: 2px solid #2563eb;
+    }
+
+    .popular::after {
+      content: "Popular";
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: #2563eb;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <div class="card-header">
+        <h2 class="plan-name">Basic</h2>
+        <div class="price">$19<span>/month</span></div>
+      </div>
+      <ul class="features">
+        <li>1 User</li>
+        <li>10GB Storage</li>
+        <li>Basic Support</li>
+        <li>Email Notifications</li>
+      </ul>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="pricing-card popular">
+      <div class="card-header">
+        <h2 class="plan-name">Pro</h2>
+        <div class="price">$49<span>/month</span></div>
+      </div>
+      <ul class="features">
+        <li>5 Users</li>
+        <li>50GB Storage</li>
+        <li>Priority Support</li>
+        <li>Advanced Analytics</li>
+        <li>Custom Integrations</li>
+      </ul>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-header">
+        <h2 class="plan-name">Enterprise</h2>
+        <div class="price">$99<span>/month</span></div>
+      </div>
+      <ul class="features">
+        <li>Unlimited Users</li>
+        <li>500GB Storage</li>
+        <li>24/7 Support</li>
+        <li>Advanced Analytics</li>
+        <li>Custom Integrations</li>
+        <li>API Access</li>
+      </ul>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </div>
+</body>
+</html>
